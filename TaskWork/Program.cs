@@ -22,3 +22,20 @@ void PrintArray(string[] array)
 }
 SecondArrayWithIF(array1, array2);
 PrintArray(array2);
+
+// Второй вариант
+/*
+Console.Clear();
+Console.WriteLine("Введите текст из набора разных символов через пробел: ");
+string text = Console.ReadLine();
+string [] array = text.Split(" ");
+Console.WriteLine("Наборы из трехсимвольных строк таков: ");
+
+for (int i = 0; i < array.Length; i++)
+{
+    if (array[i].Length <= 3)
+    {
+        Console.Write($"{array[i]} ");
+    }
+}
+*/
